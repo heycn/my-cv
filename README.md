@@ -5,7 +5,7 @@
 ## 开发模式
 
 ```
-npm i -g parcel-bundler
+yarn global add parcel
 parcel src/index.html
 ```
 
