@@ -1,7 +1,7 @@
 ## 开发模式
 
 ```
-yarn global add parcel
+yarn global add parcel 或 yarn global add parcel-bundler
 parcel src/index.html
 ```
 
@@ -12,7 +12,7 @@ parcel src/index.html
 
 第一个不行就试试第二个，第二个不行就试试第一个，反正总有一个版本可行。
 
-## 部署网页
+## build 命令
 
 ```
 yarn build
