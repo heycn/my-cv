@@ -5,13 +5,13 @@ var myChart = echarts.init(document.getElementById('skills'))
 var option = {
   tooltip: {},
   radar: {
-    // shape: 'circle',
+    shape: 'circle',
     name: {
       textStyle: {
         color: '#fff',
-        backgroundColor: '#999',
-        borderRadius: 3,
-        padding: [3, 5],
+        backgroundColor: '#7d7d7d',
+        borderRadius: 4,
+        padding: [3, 4],
       },
     },
     indicator: [
@@ -25,13 +25,10 @@ var option = {
   },
   series: [
     {
-      name: '预算 vs 开销（Budget vs spending）',
       type: 'radar',
-      // areaStyle: {normal: {}},
       data: [
         {
           value: [100, 70, 90, 80, 85, 70],
-          name: '能力雷达',
         },
       ],
     },

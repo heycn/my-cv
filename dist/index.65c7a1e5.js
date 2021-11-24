@@ -5,15 +5,15 @@ var option = {
     tooltip: {
     },
     radar: {
-        // shape: 'circle',
+        shape: 'circle',
         name: {
             textStyle: {
                 color: '#fff',
-                backgroundColor: '#999',
-                borderRadius: 3,
+                backgroundColor: '#7d7d7d',
+                borderRadius: 4,
                 padding: [
                     3,
-                    5
+                    4
                 ]
             }
         },
@@ -46,9 +46,7 @@ var option = {
     },
     series: [
         {
-            name: '预算 vs 开销（Budget vs spending）',
             type: 'radar',
-            // areaStyle: {normal: {}},
             data: [
                 {
                     value: [
@@ -58,8 +56,7 @@ var option = {
                         80,
                         85,
                         70
-                    ],
-                    name: '能力雷达'
+                    ]
                 }, 
             ]
         }, 
