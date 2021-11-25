@@ -9,7 +9,11 @@ parcel src/index.html
 
 ```
 yarn global add parcel@1.9.7
+```
+
 或
+
+```
 yarn global add parcel@next
 ```
 
