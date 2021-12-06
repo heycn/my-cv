@@ -11,8 +11,8 @@ var option = {
         color: '#fff',
         backgroundColor: '#7d7d7d',
         borderRadius: 4,
-        padding: [3, 4],
-      },
+        padding: [3, 4]
+      }
     },
     indicator: [
       { name: '静态页面', max: 100 },
@@ -20,19 +20,19 @@ var option = {
       { name: 'Vue', max: 100 },
       { name: 'React', max: 100 },
       { name: '项目开发', max: 100 },
-      { name: '沟通能力', max: 100 },
-    ],
+      { name: '沟通能力', max: 100 }
+    ]
   },
   series: [
     {
       type: 'radar',
       data: [
         {
-          value: [100, 70, 90, 80, 85, 70],
-        },
-      ],
-    },
-  ],
+          value: [100, 70, 90, 80, 85, 70]
+        }
+      ]
+    }
+  ]
 }
 
 // 使用刚指定的配置项和数据显示图表。

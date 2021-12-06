@@ -5,8 +5,6 @@
 //
 // anything defined in a previous bundle is accessed via the
 // orig method which is the require for previous bundles
-
-// eslint-disable-next-line no-global-assign
 parcelRequire = (function (modules, cache, entry, globalName) {
   // Save the require from previous bundle to this closure if any
   var previousRequire = typeof parcelRequire === 'function' && parcelRequire;
@@ -42,6 +40,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
       }
 
       localRequire.resolve = resolve;
+      localRequire.cache = {};
 
       var module = cache[name] = new newRequire.Module(name);
 
@@ -76,8 +75,16 @@ parcelRequire = (function (modules, cache, entry, globalName) {
     }, {}];
   };
 
+  var error;
   for (var i = 0; i < entry.length; i++) {
-    newRequire(entry[i]);
+    try {
+      newRequire(entry[i]);
+    } catch (e) {
+      // Save first error but execute all entries
+      if (!error) {
+        error = e;
+      }
+    }
   }
 
   if (entry.length) {
@@ -102,12 +109,18 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   // Override the current require with this new one
+  parcelRequire = newRequire;
+
+  if (error) {
+    // throw error from earlier, _after updating parcelRequire_
+    throw error;
+  }
+
   return newRequire;
 })({"epB2":[function(require,module,exports) {
 // 基于准备好的dom，初始化echarts实例
-var myChart = echarts.init(document.getElementById('skills'));
+var myChart = echarts.init(document.getElementById('skills')); // 指定图表的配置项和数据
 
-// 指定图表的配置项和数据
 var option = {
   tooltip: {},
   radar: {
@@ -120,7 +133,25 @@ var option = {
         padding: [3, 4]
       }
     },
-    indicator: [{ name: '静态页面', max: 100 }, { name: '编程基础', max: 100 }, { name: 'Vue', max: 100 }, { name: 'React', max: 100 }, { name: '项目开发', max: 100 }, { name: '沟通能力', max: 100 }]
+    indicator: [{
+      name: '静态页面',
+      max: 100
+    }, {
+      name: '编程基础',
+      max: 100
+    }, {
+      name: 'Vue',
+      max: 100
+    }, {
+      name: 'React',
+      max: 100
+    }, {
+      name: '项目开发',
+      max: 100
+    }, {
+      name: '沟通能力',
+      max: 100
+    }]
   },
   series: [{
     type: 'radar',
@@ -128,8 +159,8 @@ var option = {
       value: [100, 70, 90, 80, 85, 70]
     }]
   }]
+}; // 使用刚指定的配置项和数据显示图表。
 
-  // 使用刚指定的配置项和数据显示图表。
-};myChart.setOption(option);
+myChart.setOption(option);
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.1d550965.map
+//# sourceMappingURL=main.78380c36.js.map
