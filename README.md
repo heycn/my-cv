@@ -28,8 +28,8 @@ yarn global add parcel@1.9.7
 yarn global add parcel@next
 ```
 
-## build 命令
+## 一键部署
 
 ```
-yarn build
+yarn deploy
 ```
