@@ -1,5 +1,5 @@
 // 基于准备好的dom，初始化echarts实例
-var myChart = echarts.init(document.getElementById('skills'))
+var myChart = echarts.init(document.getElementById('skills'));
 
 // 指定图表的配置项和数据
 var option = {
@@ -28,12 +28,12 @@ var option = {
       type: 'radar',
       data: [
         {
-          value: [100, 70, 90, 80, 85, 70]
+          value: [100, 75, 90, 80, 85, 70]
         }
       ]
     }
   ]
-}
+};
 
 // 使用刚指定的配置项和数据显示图表。
-myChart.setOption(option)
+myChart.setOption(option);

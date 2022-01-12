@@ -13,7 +13,7 @@ yarn global add parcel-bundler
 > 运行
 
 ```
-parcel src/index.html
+yarn server
 ```
 
 ## 如果 parcel 报错就安装其他版本的 parcel
