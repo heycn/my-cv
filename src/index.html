@@ -2,13 +2,9 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
-    />
-    <title>陈楠 - 前端开发工程师</title>
+    <title>陈楠 - 简历</title>
     <style media="print">
       body {
         margin: 0;
@@ -18,25 +14,21 @@
         page-break-before: always;
         margin-top: 30px;
       }
-
-      #skills {
-        display: none;
-      }
     </style>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <article>
       <section class="bio">
-        <h1>陈楠</h1>
         <img
-          src="https://pic1.zhimg.com/v2-f3a33268035da62e4c2d5bead412f91e_xl.jpg"
+          src="https://pic1.zhimg.com/v2-87c93746da8cbbd9f94eaa77dccbbbdf_xl.jpg"
           alt=""
-          width="100"
-          height="100"
         />
-        <p>男 | 22岁 | 前端开发工程师 | 广州</p>
-        <p>手机：13725390095 | 微信：heycn1 | 邮箱：chennan112@foxmail.com</p>
+        <div class="wrapper">
+          <h1>陈楠</h1>
+          <p>男 | 22岁 | 前端开发工程师 | 广州</p>
+          <p>手机：13725390095 | 微信：heycn1 | 邮箱：chennan112@foxmail.com</p>
+        </div>
       </section>
 
       <section class="jobs">
@@ -46,28 +38,53 @@
             <header>
               <h3>网易游戏</h3>
               <h4>前端界面拼接</h4>
-              <span><time>2021年3月</time>~<time>至今</time></span>
+              <span><time>2021年3月</time> - <time>至今</time></span>
             </header>
             <ul>
-              <li>独立负责 <strong>前端界面的实现、UI 动画制作</strong>，编写部分代码，与程序开发配合，实现 UI 与数据交互</li>
-              <li>负责 UI 资源库 <strong>管理、迭代、优化与维护</strong>，制作流程文档撰写，熟悉<strong>交互设计、模块化开发、用户体验</strong></li>
-              <li>定期组织内部分享，包括 <strong>SVN、Git</strong> 的使用、<strong>交互逻辑</strong>与<strong>用户体验</strong>等话题。
-              <li>微信小程序搜索：跑跑狼人杀（前端界面都是由我实现的）</li>
-            </ul>
+              <li>独立负责 <strong>前端界面的实现、UI 动画制作，完美还原设计稿</strong>，配合程序开发人员实现交互与调试<strong></li>
+                <li>负责 UI 资源库 <strong>管理、迭代、测试、优化与维护</strong>，制作流程文档撰写</li>
+                <li>定期组织内部分享，包括 <strong>SVN、Git</strong> 的使用、<strong>交互逻辑</strong> 与 <strong>用户体验</strong> 等话题。
+                <li>微信小程序搜索：跑跑狼人杀（前端界面都是由我实现的）</li>
+                </ul>
           </li>
           <li>
             <header>
               <h3>中国人民解放军</h3>
-              <h4>防空兵</h4>
-              <span><time>2018年9月</time>~<time>2020年12月</time></span>
+              <h4>战士</h4>
+              <span><time>2018年9月</time> - <time>2020年12月</time></span>
             </header>
             <ul>
-              <li>历任：思想骨干、副班长、风气监督员 等职务</li>
-              <li>荣获：三等功班、年度嘉奖、训练标兵、优秀新兵、“强军杯”第一名 等荣誉</li>
-              <li>经历：海军成立70周年阅兵、实弹战备值班任务、红蓝对抗 等大项任务</li>
+              <li>担任：<strong>思想骨干、副班长</strong>、风气监督员</li>
+              <li>荣获：<strong>优秀士兵、个人嘉奖、集体三等功</strong>、训练标兵、比武第一名</li>
             </ul>
           </li>
         </ol>
+      </section>
+
+      <section class="skills">
+        <h2>技能</h2>
+        <div class="wrapper">
+          <div id="skills"></div>
+          <ul>
+            <li>熟悉 <strong>HTML5</strong>  / <strong>CSS3</strong> 新特性，能够编写 <strong> 语义化的 HTML，模块化的 CSS</strong>，包括 SASS / LESS</li>
+            <li>熟悉 <strong>ECMAScript (JavaScript)</strong> ES6 新特性，包括 let / Promise / 解构赋值 / await 等</li>
+            <li>熟练掌握 <strong>Vue 全家桶</strong> 的使用，包括 <strong>Vue3</strong>、VueCli、VueRouter、Vuepress、Vuex 等</li>
+            <li>熟练掌握 <strong>React 全家桶</strong> 的使用，包括 create-react-app、ReactRouter、Redux 等</li>
+            <li>熟悉 <strong>前后端分离</strong> 技术，包括 AJAX、跨域、同源策略、前端路由、Cookie、Session 等</li>
+            <li>了解 <strong>小程序开发</strong>，了解 WXML 与 WXSS 特性，以及应用生命周期与页面生命周期</li>
+            <li>了解 <strong>TypeScript</strong> 的使用，我的项目多次使用 TS</li>
+            <li>了解 <strong>Webpack</strong> 的配置和优化，常用的 loader 和 plugin 及打包流程的原理</li>
+            <li>熟练 <strong>Git、SVN、npm、Yarn</strong> 工作流程及常用命令，有一定的 Shell 编写能力</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="others">
+        <h2>其他链接</h2>
+        <ul>
+          <li><a href="https://juejin.cn/user/4372092371864984/posts">掘金博客</a> - 目前已有 30 篇技术文章</li>
+          <li><a href="https://github.com/heycn">我的 GitHub</a> - 过去半年有 2000 次提交</li>
+        </ul>
       </section>
 
       <section class="projects">
@@ -75,29 +92,30 @@
         <ol>
           <li>
             <header>
-              <h3>Flag UI</h3>
+              <h3>Vue3 UI 组件库 & Vue2 UI 组件库</h3>
               <span>
                 <a href="https://github.com/heycn/flag-ui">源码链接</a>
-                <a href="https://heycn.gitee.io/flag-ui-website">预览链接</a>
+                <a href="https://heycn.gitee.io/feeling-ui/">预览链接</a>
               </span>
             </header>
-            <p>这是一个基于 <strong>Vue3</strong> / <strong>TypeScript</strong> 开发 的 UI 组件库，涵盖了 <strong>Switch</strong>、<strong>Tabs</strong> ... 等常见 UI 组件</p>
-            <p>深入研究 Vue 3，使用了 <strong>setup</strong>、<strong>onMounted</strong>、<strong>watchEffect</strong>、<strong>ref</strong>、<strong>computed</strong> 等 API</p>
-            <p><strong>模块化</strong>的源代码简洁明了，易于阅读。制作过程让我对 Vue 有了新的认识。<!--  我将其总结成了一篇<a href="#">博客</a> --></p>
-            
+            <p>这是我在学习 Vue2 和 <strong>Vue3</strong> 的时候开发 的 UI 组件库，涵盖了 <strong>Switch</strong>、<strong>Tabs</strong>、<strong>Button</strong>、<strong>Input</strong>、<strong>Grid</strong>、<strong>Toast</strong>、<strong>Layout</strong>、<strong>Collapse</strong>、<strong>Popover</strong> 等常见 UI 组件</p>
+            <p>Vue2 版基于 Vue2 / SVG Icon / <strong>SCSS</strong> / Vuepress 实现的，每个组件都以测试驱动，保证组件的使用质量</p>
+            <p>Vue3 版是我在学习 Vue3 时基于 Vue3 / <strong>TypeScript</strong> / <strong>Vite</strong> 实现的，通过 Vite 与 Vue3 相结合，尝鲜使用了 <strong>setup</strong>、<strong>onMounted</strong>、<strong>watchEffect</strong>、<strong>ref</strong>、<strong>computed</strong> 等 API</p>
+            <p><strong>模块化</strong>的源代码简洁明了，易于阅读。制作过程让我对 Vue 有了新的认识，我将其总结成了一篇 <a href="https://juejin.cn/post/7067523575623712776">博客</a></p>
           </li>
-          <li>
+          <li class="page2">
             <header>
-              <h3>口袋记账（React & Vue）</h3>
+              <h3>React 口袋记账 & Vue 口袋记账</h3>
               <span>
                 <a href="https://github.com/heycn/pocket-react">源码链接</a>
                 <a href="https://heycn.gitee.io/pocket-react-qr-code/">扫码预览</a>
               </span>
             </header>
-            <p>这是我为了满足家人的需求而独立开发的一款应用，特点是简约、快速、好用</p>
-            <p>React 版：基于 <strong>React</strong> / <strong>TypeScript</strong> / <strong>React Router</strong> / </strong> <strong>webpack</strong> / <strong>LocalStorage</strong> 实现的极简主义记账应用</p>
-            <p>Vue 版：基于 <strong>Vue</strong> / <strong>TypeScript</strong> / <strong>Vue Router</strong> / <strong>Vuex</strong> 实现的</p>
-            <p>该项目使我对 <strong>React Hooks</strong>、<strong>SVG Icon</strong> 和 <strong>SCSS</strong> 有了更深入的理解</p>
+            <p>这是我为了满足家人的需求而独立实现出的一款记账应用，特点是 <strong>快速记账</strong>，并且可以查看消费记录</p>
+            <p>主要功能包括：<strong>标签管理</strong>，<strong>账单透明化管理</strong> 等功能</p>
+            <p>React 版基于 React / <strong>TypeScript</strong> / <strong>Hooks</strong> / <strong>React Router</strong> / <strong>LocalStorage</strong> 实现</p>
+            <p>Vue 版基于 Vue / <strong>TypeScript</strong> / <strong>Vue Router</strong> / <strong>Vuex</strong> 实现，使用到了装饰器语法</p>
+            <p>该项目使我对 <strong>React Hooks</strong>、<strong>TypeScript</strong>、<strong>SVG Icon</strong> 和 <strong>SCSS</strong> 有了更深入的理解</p>
           </li>
           <li>
             <header>
@@ -107,27 +125,11 @@
                 <a href="https://heycn.gitee.io/elephant-notebook-website/#/login">预览链接</a>
               </span>
             </header>
-            <p>这是一个基于 Vue / <strong>element-ui</strong> / Vuex 实现与后端交互的在线笔记。</p>
+            <p>这是一个基于 Vue / <strong>element-ui</strong> / Vuex 实现与后端交互的 PC 端在线笔记。</p>
             <p>主要功能包括：账户创建/登录、新建笔记本、Markdown 支持、删除笔记放入回收站、笔记恢复、笔记彻底删除、用户退出登录等。</p>
-            <p>该项目使我与后端交互有了更多的了解，我将其总结了一篇<a href="https://juejin.cn/post/7063365707102158878/">博客</a></p>
+            <p>该项目使我与后端交互有了更多的了解，我将其总结了一篇 <a href="https://juejin.cn/post/7063365707102158878/">博客</a></p>
           </li>
         </ol>
-      </section>
-
-      <section class="skills page2">
-        <h2>技能</h2>
-        <div class="wrapper">
-          <div id="skills"></div>
-          <ul>
-            <li>能够编写语义化的 <strong>HTML</strong>，模块化的 <strong>CSS</strong></li>
-            <li>熟悉 <strong>ECMAScript (JavaScript)</strong> ES6语法，包括 let / Promise / await / 析构赋值</li>
-            <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、同源策略、前端路由、Cookie、Session 等</li>
-            <li>熟练掌握 <strong>Vue 全家桶</strong> 的使用，包括 <strong>Vue3</strong>、VueCli、VueRouter、Vuex 等</li>
-            <li>熟练掌握 <strong>React 全家桶</strong> 的使用，包括 create-react-app、ReactRouter、Redux 等</li>
-            <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
-            <li>了解 <strong>Webpack 的配置和优化</strong></li>
-          </ul>
-        </div>
       </section>
 
       <section class="openSource">
@@ -135,12 +137,13 @@
         <ul>
           <li>
             <header>
-              <h3>Mini翻译工具</h3>
+              <h3>Mini 翻译工具</h3>
               <span>
                 <a href="https://github.com/heycn/miniprogram-dict">源码链接</a>
               </span>
             </header>
-            <p>我在学习 <strong>小程序开发</strong> 时制作的一个翻译工具，微信小程序搜索：Mini翻译工具</p>
+            <p>小程序搜索：Mini翻译工具</p>
+            <p>我在学习 <strong>小程序开发</strong> 时制作的一个翻译工具，规范使用了 WXML / WXSS</p>
           </li>
           <li>
             <header>
@@ -154,6 +157,16 @@
           </li>
           <li>
             <header>
+              <h3>Letter 导航</h3>
+              <span>
+                <a href="https://github.com/heycn/letter-nav/">源码链接</a>
+                <a href="https://heycn.gitee.io/letter-nav-website/">项目预览</a>
+              </span>
+            </header>
+            <p>这是我使用 <strong>原生 JavaScript</strong> 做的导航首页，敲键盘首字母即可跳转网页</p>
+          </li>
+          <li>
+            <header>
               <h3>简易画板</h3>
               <span>
                 <a href="https://github.com/heycn/canvas-demo">源码链接</a>
@@ -162,24 +175,6 @@
             </header>
             <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
           </li>
-          <li>
-            <header>
-              <h3>Letter导航</h3>
-              <span>
-                <a href="https://github.com/heycn/letter-nav/">源码链接</a>
-                <a href="https://heycn.gitee.io/letter-nav-website/">项目预览</a>
-              </span>
-            </header>
-            <p>这是我使用 <strong>原生 JavaScript</strong> 做的导航首页，敲键盘首字母即可跳转网页</p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="others">
-        <h2>其他链接</h2>
-        <ul>
-          <li><a href="https://juejin.cn/user/4372092371864984/posts">我的博客</a>，目前已有 29 篇技术文章</li>
-          <li><a href="https://github.com/heycn">我的 GitHub</a>，过去半年有 1500 次提交</li>
         </ul>
       </section>
 
@@ -191,7 +186,5 @@
         </p>
       </section>
     </article>
-    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.1.2/echarts.min.js"></script>
-    <script src="./main.js"></script>
   </body>
 </html>

@@ -17,13 +17,23 @@ article {
 }
 
 /* 常规样式 */
-p {
+p,
+li {
   margin: 0.3em 0;
 }
 
 h1 {
-  font-size: 25px;
-  margin-top: 0;
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  padding-left: 8px;
+  padding-bottom: 4px;
+  border-left: 4px solid #333;
+  border-bottom: 1px dashed #ccc;
 }
 
 h4,
@@ -67,13 +77,19 @@ h6 {
 }
 
 .bio {
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .bio img {
-  position: absolute;
-  top: 0;
-  right: 0;
+  width: 104px;
+  height: 104px;
+  margin-top: 4px;
+  margin-right: 24px;
+}
+
+.bio .wrapper {
+  margin-top: -24px;
 }
 
 /* projects 样式 */
@@ -102,39 +118,6 @@ h6 {
 
 .projects > ol > li h3 {
   display: inline-block;
-}
-
-/* skills 样式 */
-#skills {
-  width: 500px;
-  height: 270px;
-}
-@media print {
-  #skills {
-    display: none;
-  }
-}
-
-.skills > .wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.skills > .wrapper > :first-child {
-  margin-right: 24px;
-}
-
-.skills > .wrapper > ul {
-  color: #666;
-}
-
-.skills > .wrapper strong {
-  color: #f60;
-}
-
-.skills > .wrapper > ul > li {
-  line-height: 1.2;
-  margin-bottom: 8px;
 }
 
 /* openSource 样式 */
