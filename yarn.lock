@@ -2,3 +2,7 @@
 # yarn lockfile v1
 
 
+"fonts.css@^2.0.0":
+  "integrity" "sha512-Q1f9npa8JaN+HnIB29U+l50XFIJvawglX2Hx+vEjp6VsghQTPRy0/WISnDhY7ozvUs68TXq7F0KxtVU97uUVYw=="
+  "resolved" "https://registry.npmjs.org/fonts.css/-/fonts.css-2.0.0.tgz"
+  "version" "2.0.0"
