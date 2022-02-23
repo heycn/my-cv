@@ -22,11 +22,12 @@ article {
 /* 常规样式 */
 p,
 li {
-  margin: 0.3em 0;
+  margin: 0.1em 0;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 26px;
+  margin-bottom: 0;
   color: #000;
 }
 
@@ -58,9 +59,10 @@ strong {
 }
 
 a {
-  color: #999;
+  color: #8eb1b8;
   text-decoration: none;
   border-bottom: 1px solid;
+  margin-right: .25em;
 }
 
 p,
@@ -85,8 +87,8 @@ h6 {
 }
 
 .bio img {
-  width: 104px;
-  height: 104px;
+  width: 128px;
+  height: 128px;
   margin-top: 4px;
   margin-right: 24px;
 }
@@ -121,23 +123,6 @@ h6 {
 
 .projects > ol > li h3 {
   display: inline-block;
-}
-
-/* openSource 样式 */
-.openSource header img {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.openSource > ul > li {
-  margin-bottom: 24px;
-}
-
-.openSource header {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
 }
 
 /* jobs 样式 */
