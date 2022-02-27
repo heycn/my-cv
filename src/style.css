@@ -59,10 +59,10 @@ strong {
 }
 
 a {
-  color: #8eb1b8;
+  color: #97c1c9;
   text-decoration: none;
-  border-bottom: 1px solid;
-  margin-right: .25em;
+  border-bottom: 1px solid #88a0a5;
+  margin-right: 0.25em;
 }
 
 p,
@@ -127,13 +127,13 @@ h6 {
 
 /* jobs 样式 */
 .jobs > ol > li {
-  margin: 12px 0;
+  margin-bottom: 24px;
 }
 
 .jobs header {
   display: flex;
   color: #666;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 }
 
 .jobs header > h3 {
@@ -149,6 +149,11 @@ h6 {
 .jobs header > span {
   font-size: 18px;
   margin-left: auto;
+}
+
+/*  开源项目 */
+.openSource > ul > li {
+  margin: 12px 0;
 }
 
 /* 教育信息 */
